@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fans</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" /> -->
+</head>
+<body>
+  <nav class="sticky top-0 z-50 bg-gray-800 flex-shrink-0">
+    <div class="sm:mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+      <div class="relative flex h-25 items-center justify-between">
+        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
+          <!-- Mobile menu button-->
+          <button type="button" class="relative  cursor-pointer inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open main menu</span>
+            <!--
+              Icon when menu is closed.
+  
+              Menu open: "hidden", Menu closed: "block"
+            -->
+            <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <!--
+              Icon when menu is open.
+  
+              Menu open: "block", Menu closed: "hidden"
+            -->
+            <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <div class="flex sm:flex-row w-[90%] items-center justify-between sm:justify-between h-20 text-white">
+          <div class="flex items-center justify-center">
+            <img src="/Aggr/resources/AGGROHIYA LOGO.jpg" alt="company logo" class="h-12 w-30 sm:h-20 sm:w-50">
+          </div>
+          <div class="flex flex-col sm:flex-row items-center">
+            
+            <div class="hidden lg:flex items-center space-x-2">
+              <div class="hidden lg:inline-block mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10 sm:flex-col md:flex-row"></div>
+              <div class="text-white">Aggrohiya's Support:</div>
+              <div class="text-white">1800 - 571 - 2425</div>
+              
+            </div>
+           <div class="flex items-center space-x-2">
+            <div class="hidden sm:inline-block sm:mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10"></div>
+              <img src="/Aggr/resources/whatsapp.png" class="w-7 h-7 sm:w-10 sm:h-10" alt="">
+              <div>8595108742</div>
+              <div class="hidden sm:inline-block sm:mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10"></div>
+           </div> 
+          </div>
+        
+          <div class="hidden sm:ml-6 sm:block">
+            <div class="flex items-center h-20 space-x-6">
+              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+              <a href="/Aggr/" class="rounded-md hover:bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
+              <a href="#" class="rounded-md hover:bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+              <a href="/Aggr/contact_us.html" class="rounded-md hover:bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  
+    <!-- Mobile menu, show/hide based on menu state. -->
+    <div class="hidden" id="mobile-menu">
+      <div class="space-y-1 px-2 pt-2 pb-3">
+        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+        <a href="/Aggr/" class="block rounded-md hover:bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
+        <a href="#" class="block rounded-md hover:bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
+        <a href="/Aggr/contact_us.html" class="block rounded-md hover:bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+    <!-- carousel -->
+
+    <div id="default-carousel" class="relative w-full" data-carousel="slide">
+        <!-- Carousel wrapper -->
+        <div class="relative h-56 overflow-hidden md:h-96">
+            <!-- Item 1 -->
+            <div class="hidden duration-700 ease-in-out bg-[url(/Aggr/resources/images/cooking_appliances/banner/banner1.png)] bg-no-repeat bg-contain bg-center" data-carousel-item>
+                <!-- <img src="/Aggr/resources/images/cooking_appliances/banner/banner1.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+            </div>
+            <!-- Item 2 -->
+            <div class="hidden duration-700 ease-in-out bg-[url(/Aggr/resources/images/cooking_appliances/banner/banner2.jpg)] bg-no-repeat bg-contain bg-center" data-carousel-item>
+                <!-- <img src="/Aggr/resources/images/cooking_appliances/banner/banner1.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+            </div>
+            <!-- Item 3 -->
+            <div class="hidden duration-700 ease-in-out bg-[url(/Aggr/resources/images/cooking_appliances/banner/banner3.jpg)] bg-no-repeat bg-contain bg-center" data-carousel-item>
+                <!-- <img src="/Aggr/resources/images/cooking_appliances/banner/banner1.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+            </div>
+            <!-- Item 4 -->
+            <div class="hidden duration-700 ease-in-out bg-[url(/Aggr/resources/images/cooking_appliances/banner/banner4.jpg)] bg-no-repeat bg-contain bg-center" data-carousel-item>
+                <!-- <img src="/Aggr/resources/images/cooking_appliances/banner/banner1.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+            </div>
+            <!-- Item 5 -->
+            <div class="hidden duration-700 ease-in-out bg-[url(/Aggr/resources/images/cooking_appliances/banner/banner5.jpg)] bg-no-repeat bg-contain bg-center" data-carousel-item>
+                <!-- <img src="/Aggr/resources/images/cooking_appliances/banner/banner1.png" class="absolute block w-full h-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="..."> -->
+            </div>
+        </div>
+        <!-- Slider indicators -->
+        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+        </div>
+        <!-- Slider controls -->
+        <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+                </svg>
+                <span class="sr-only">Previous</span>
+            </span>
+        </button>
+        <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+                <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+                </svg>
+                <span class="sr-only">Next</span>
+            </span>
+        </button>
+    </div>
+    <div class="my-5 mx-auto sm:max-w-[80%]">
+        <div class="grid grid-cols-2 md:grid-cols-3 2xl:grid-cols-4 sm:grid-cols-2">
+            <a href="/Aggr/mixer_grinder.html">
+                <div class="h-[120px] sm:h-[150px] flex items-center justify-evenly">
+                    <div class="flex items-center justify-between">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto my-2 w-[80pt] h-[80pt] sm:w-[100pt] sm:h-[100pt]" version="1.0" width="213.000000pt" height="237.000000pt" viewBox="0 0 213.000000 237.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,237.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                        <path d="M860 2251 c0 -4 -18 -11 -40 -14 -48 -6 -76 -25 -60 -41 13 -13 13 -76 0 -76 -22 0 -108 -92 -131 -140 -17 -37 -30 -51 -51 -55 -14 -4 -32 -13 -39 -21 -10 -12 -5 -20 23 -47 l36 -32 11 -155 c14 -189 34 -296 62 -333 l21 -29 -31 -57 c-31 -58 -67 -176 -96 -311 l-16 -75 -108 -22 c-156 -32 -240 -61 -271 -91 -34 -35 -75 -192 -68 -260 7 -64 55 -143 93 -154 46 -13 925 -12 958 1 37 14 34 16 42 -21 4 -18 12 -41 18 -53 5 -11 13 -27 17 -35 22 -48 239 -70 334 -34 41 16 53 27 76 71 23 42 29 70 35 151 l7 100 53 7 c72 9 88 22 89 75 1 31 8 51 25 69 57 63 79 138 106 373 5 45 11 60 31 72 29 20 32 56 6 79 -10 10 -41 24 -68 33 -27 8 -73 27 -101 41 -72 34 -196 36 -269 4 -58 -26 -146 -56 -192 -66 -34 -7 -56 -33 -43 -53 4 -6 25 -18 46 -25 l40 -14 17 -149 c9 -82 19 -156 21 -165 4 -14 -8 -17 -72 -22 -42 -2 -93 -12 -113 -20 -33 -14 -38 -14 -51 1 -8 10 -18 49 -22 89 -4 42 -13 77 -21 84 -12 9 -14 5 -14 -27 0 -71 -69 -139 -213 -210 -76 -37 -73 -49 6 -18 90 35 167 86 205 134 l32 42 1 -59 c1 -32 0 -69 -1 -83 -2 -35 -48 -98 -92 -128 -21 -13 -35 -29 -31 -35 3 -5 2 -7 -4 -4 -6 4 -27 -2 -47 -13 -21 -10 -51 -23 -68 -29 -17 -6 -29 -14 -26 -17 8 -7 154 50 202 80 l40 24 13 -25 c7 -14 13 -47 13 -73 0 -47 0 -48 -48 -68 -27 -12 -77 -26 -112 -31 -72 -12 -470 -3 -470 11 0 7 14 12 31 10 3 -1 15 16 27 36 19 34 19 40 7 62 -8 14 -17 32 -21 41 -3 11 -13 15 -25 12 -11 -3 -19 0 -19 7 0 10 -3 10 -15 0 -8 -7 -21 -10 -30 -6 -8 3 -14 2 -13 -2 2 -4 -6 -19 -16 -34 -19 -28 -15 -85 4 -73 5 3 7 0 4 -8 -3 -10 5 -19 25 -28 16 -7 28 -16 25 -20 -8 -14 30 -17 236 -24 221 -7 295 1 381 46 49 25 49 6 0 -28 -70 -48 -155 -54 -531 -42 -184 6 -276 6 -278 -1 -5 -15 -63 -12 -92 5 -14 8 -35 14 -46 15 -12 0 -32 9 -45 21 -21 18 -21 20 -4 13 11 -4 99 -8 195 -10 l175 -2 -179 8 c-214 10 -216 11 -197 95 7 30 16 55 21 55 4 0 1 -19 -7 -42 -8 -22 -12 -51 -10 -62 2 -14 6 -7 12 21 4 23 15 55 25 71 16 25 28 31 101 45 95 18 218 33 362 43 l99 6 -43 20 c-24 10 -59 30 -79 44 l-35 26 38 -36 c20 -20 37 -38 37 -41 0 -3 -33 -5 -72 -5 -95 0 -265 -24 -353 -49 -38 -11 -73 -17 -77 -13 -12 12 -26 89 -21 116 12 61 87 95 305 138 l107 21 12 55 11 54 26 -25 c44 -41 88 -57 180 -68 152 -17 285 7 336 60 26 27 28 33 21 83 -11 79 -53 219 -76 250 l-20 28 26 53 c27 58 66 260 64 335 -1 33 -5 15 -14 -56 -17 -128 -33 -206 -53 -256 -22 -56 -80 -80 -192 -79 -103 1 -165 16 -195 49 -29 31 -46 119 -69 361 l-5 52 45 -24 c67 -35 144 -48 269 -43 89 4 120 9 160 28 58 27 90 28 125 2 42 -32 45 -68 16 -165 -33 -108 -33 -127 -2 -127 34 0 44 17 55 96 9 65 11 168 3 144 -2 -6 -17 16 -32 48 -25 53 -32 60 -65 66 -20 4 -38 6 -39 4 -29 -63 -86 -81 -251 -82 -139 -1 -189 9 -246 47 -26 17 -34 30 -35 54 -1 23 3 30 13 26 12 -5 12 -7 1 -15 -8 -5 -2 -6 17 -2 23 4 27 3 15 -5 -11 -8 -7 -10 20 -6 25 4 29 3 15 -3 -31 -14 94 -32 206 -30 91 1 90 1 -39 8 -73 4 -135 10 -138 12 -3 3 53 3 123 1 97 -4 145 -1 196 11 38 9 74 13 79 10 7 -4 8 -2 4 4 -4 7 -3 12 3 12 5 0 14 -6 18 -13 4 -8 23 -17 41 -20 27 -6 32 -4 32 13 0 12 -8 20 -22 22 -19 2 -22 8 -20 35 2 20 -3 37 -16 50 -10 10 -26 39 -36 65 -19 51 -86 133 -116 143 -23 7 -28 53 -8 73 18 18 -8 41 -54 48 -21 4 -41 11 -44 15 -7 12 -44 12 -44 0z m40 -23 c0 -17 3 -19 9 -9 11 18 83 2 88 -19 4 -13 3 -13 -6 0 -9 13 -14 9 -13 -10 1 -13 -140 -10 -168 4 -31 15 -36 12 -20 -14 7 -12 30 -15 99 -15 l90 0 3 -34 c2 -28 8 -35 25 -36 54 -4 32 -40 -33 -55 -76 -18 -208 -6 -241 22 -17 14 1 38 29 38 19 0 20 5 16 56 -5 53 -3 56 21 66 14 5 36 7 48 5 15 -3 23 1 23 9 0 8 7 14 15 14 9 0 15 -9 15 -22z m-180 -167 c0 -37 235 -52 300 -18 l35 18 26 -31 c15 -17 34 -56 44 -86 16 -50 16 -56 1 -79 -9 -14 -28 -28 -42 -31 -19 -5 -23 -9 -12 -15 8 -6 -4 -7 -32 -4 -34 3 -39 3 -20 -4 18 -7 4 -8 -45 -5 -198 11 -238 12 -210 4 28 -7 29 -8 5 -9 -14 0 -50 6 -80 15 -30 8 -63 16 -72 18 -10 1 -21 6 -25 11 -5 4 -1 5 7 1 8 -4 7 -1 -3 6 -54 38 -54 37 -33 53 29 22 41 18 51 -17 10 -34 36 -52 90 -63 17 -3 6 4 -22 15 -60 24 -73 49 -55 109 17 55 92 147 92 112z m450 -183 c0 -6 -8 -20 -17 -31 -10 -11 -12 -17 -5 -13 6 4 12 3 12 -1 0 -5 -17 -9 -37 -10 -34 -1 -35 1 -16 10 13 5 28 22 35 38 12 26 28 30 28 7z m-237 -85 c-23 -2 -64 -2 -90 0 -26 2 -7 3 42 3 50 0 71 -1 48 -3z m-58 -517 c78 0 107 4 134 18 43 23 38 -1 -6 -27 -71 -41 -242 -28 -288 23 l-18 20 39 -16 c27 -12 68 -17 139 -18z m-112 -31 c22 -9 67 -15 115 -15 65 0 87 4 125 25 47 24 47 24 58 4 20 -38 47 -126 64 -208 15 -77 15 -82 -2 -105 -36 -49 -83 -61 -248 -61 -172 0 -225 14 -265 67 l-24 32 22 85 c12 46 36 115 54 153 28 62 33 67 47 54 9 -9 33 -22 54 -31z m1047 16 c35 -18 70 -52 70 -67 0 -34 -191 -56 -304 -34 -104 20 -113 54 -25 95 44 20 65 23 143 21 50 -1 102 -8 116 -15z m-325 -58 c0 -23 6 -30 40 -42 64 -23 249 -25 310 -4 43 16 50 22 50 45 -1 23 2 25 20 16 11 -6 21 -10 23 -9 9 8 62 -24 67 -41 17 -51 -68 -78 -263 -85 -90 -4 -164 -1 -203 6 -74 15 -194 65 -194 82 0 6 23 19 51 29 l51 16 -1 -34 c-1 -30 4 -37 34 -53 19 -10 55 -21 80 -24 45 -5 45 -5 -8 9 -68 17 -102 35 -102 54 0 13 2 13 18 -1 9 -8 46 -23 82 -32 83 -22 284 -17 344 9 22 9 41 15 43 13 9 -10 -34 -32 -85 -44 l-57 -13 48 5 c71 7 107 29 107 65 0 16 -4 31 -9 34 -5 3 -8 -2 -7 -12 4 -51 -227 -81 -376 -48 -43 10 -83 25 -92 35 -16 17 -16 20 -1 35 23 23 31 20 30 -11z m35 -129 c84 -18 267 -17 350 1 83 18 80 18 80 -5 0 -83 -358 -108 -500 -35 -22 11 -30 23 -30 41 0 21 4 25 18 19 9 -4 46 -13 82 -21z m170 -88 c124 0 153 3 198 21 28 12 52 18 52 15 0 -4 -7 -56 -15 -116 -24 -184 -63 -235 -183 -244 l-71 -5 -3 34 c-3 29 -10 37 -47 56 -24 12 -70 25 -103 29 -48 6 -59 10 -63 28 -7 34 -25 175 -25 201 l0 24 58 -22 c49 -18 78 -21 202 -21z m-524 -120 c-6 -33 -62 -98 -101 -118 -11 -6 -1 6 23 27 48 42 72 81 73 122 0 15 3 22 6 15 3 -7 2 -28 -1 -46z m386 -107 c67 -14 108 -35 108 -55 0 -21 -73 -50 -145 -58 -112 -12 -280 23 -292 61 -6 16 41 45 85 54 59 11 186 10 244 -2z m-347 -56 c-13 -84 -13 -91 0 -117 15 -29 2 -36 -14 -8 -6 9 -11 12 -11 5 0 -6 8 -19 18 -29 9 -10 17 -22 17 -27 0 -17 75 -37 123 -32 32 3 38 2 18 -3 -17 -4 27 -7 100 -7 71 0 113 3 94 6 -26 5 -20 7 25 6 33 -1 68 3 78 7 13 6 17 4 17 -13 0 -58 -199 -90 -348 -56 -89 20 -134 48 -130 79 1 13 -3 31 -11 39 -8 10 -10 24 -6 34 16 37 14 45 -8 26 -12 -11 -39 -30 -60 -42 -36 -22 -34 -20 17 32 41 40 59 68 68 101 16 60 22 59 13 -1z m156 -64 c82 -14 213 -4 261 20 36 18 38 18 43 0 9 -26 73 -24 160 6 14 4 13 2 -4 -8 -17 -10 -20 -16 -10 -19 20 -7 -59 -28 -101 -27 -25 1 -16 4 28 11 79 12 76 20 -5 12 -57 -6 -61 -8 -72 -40 -18 -50 -88 -68 -235 -61 -61 3 -122 8 -136 11 l-25 7 25 -12 c14 -7 79 -14 145 -16 137 -4 212 14 230 55 11 24 25 30 25 10 -1 -75 -264 -110 -420 -57 -43 14 -67 34 -30 25 24 -7 24 -6 -2 9 -25 14 -28 22 -28 64 0 26 2 50 5 53 3 3 23 -3 44 -14 21 -10 67 -23 102 -29z m-1211 -98 c-4 -9 -11 -38 -15 -66 -7 -45 -9 -47 -17 -25 -10 24 -5 114 8 167 7 26 8 25 20 -17 8 -25 9 -50 4 -59z m1557 15 c-7 -18 -79 -56 -104 -56 -10 1 0 7 22 15 22 8 49 25 59 39 21 27 33 28 23 2z m-1114 -24 c41 -36 5 -112 -52 -112 -31 0 -49 14 -31 25 18 11 9 85 -11 85 -5 0 -13 -15 -18 -32 -6 -22 -10 -26 -10 -13 -3 62 71 90 122 47z m827 -120 c87 -4 165 7 231 33 13 5 14 -4 8 -69 -9 -88 -19 -110 -62 -133 -45 -24 -222 -29 -297 -9 -30 8 -56 13 -58 11 -1 -1 14 -11 35 -21 41 -20 191 -26 268 -11 35 6 37 6 20 -5 -13 -9 -59 -13 -135 -13 -95 0 -122 3 -155 20 -22 11 -40 25 -40 30 -1 6 -7 21 -14 34 -12 22 -30 158 -23 179 1 5 31 -2 65 -16 46 -19 87 -26 157 -30z"/>
+                        <path d="M680 1148 c-39 -64 -37 -137 3 -162 15 -9 23 -6 43 17 19 23 24 39 24 83 0 94 -33 123 -70 62z m54 6 c9 -24 7 -100 -3 -127 -11 -28 -32 -39 -52 -26 -9 5 -14 25 -13 57 1 73 50 143 68 96z"/>
+                        <path d="M1010 1161 c-5 -11 -10 -47 -10 -81 0 -52 4 -65 25 -86 67 -67 101 76 40 164 -20 27 -41 28 -55 3z m43 -8 c43 -49 42 -163 -3 -163 -26 0 -40 35 -40 100 0 78 13 96 43 63z"/>
+                        <path d="M1643 1093 c26 -2 68 -2 95 0 26 2 4 3 -48 3 -52 0 -74 -1 -47 -3z"/>
+                        <path d="M1400 742 c0 -4 18 -7 40 -7 22 0 40 3 40 7 0 5 -18 8 -40 8 -22 0 -40 -3 -40 -8z"/>
+                        <path d="M567 524 c-4 -4 -7 -25 -7 -46 0 -44 26 -54 36 -14 10 43 -8 81 -29 60z"/>
+                        <path d="M1045 1784 l-50 -14 44 5 c24 3 51 10 60 15 21 12 7 11 -54 -6z"/>
+                        <path d="M1227 1787 c-3 -9 -1 -19 4 -23 6 -4 20 -25 30 -48 11 -25 18 -33 18 -21 0 11 -10 40 -23 64 -17 32 -24 40 -29 28z"/>
+                        <path d="M654 1697 c3 -10 9 -70 13 -133 3 -69 10 -110 15 -102 7 12 5 86 -7 192 -3 22 -10 45 -16 50 -9 8 -10 6 -5 -7z"/>
+                        <path d="M1026 1593 c-8 -106 -8 -149 3 -138 10 12 21 215 11 215 -4 0 -10 -34 -14 -77z"/>
+                        <path d="M812 784 c-18 -13 -21 -19 -11 -30 23 -28 109 -7 109 28 0 14 -8 18 -38 18 -21 0 -48 -7 -60 -16z"/>
+                        <path d="M1254 166 c8 -51 15 -62 44 -76 34 -16 147 -25 206 -16 60 9 84 31 92 84 l7 42 -39 -17 c-53 -22 -213 -22 -272 0 l-43 17 5 -34z m278 -38 c-21 -21 -212 -21 -212 0 0 4 50 8 110 8 61 0 107 -3 102 -8z"/>
+                        </g>
+                        </svg>
+                        <div class="flex flex-col">
+                            <div class="text-gray-800 sm:font-bold sm:text-3xl">Mixer</div>
+                            <div class="text-gray-500">Grinder</div>
+                        </div>
+                       
+                    </div>
+                    <div class="hidden sm:block">
+                        <div class="block mx-5 h-[100px] min-h-[1em] w-1 self-stretch bg-neutral-100 dark:bg-black/10"></div>
+                    </div>
+                </div>
+            </a>
+            
+            <div class="h-[120px] sm:h-[150px] flex items-center justify-evenly">
+                <a href="/Aggr/hand_blender.html">
+                    <div class="flex items-center justify-evenly">
+                      <svg class="mx-auto my-2 w-[80pt] h-[80pt] sm:w-[100pt] sm:h-[100pt]" xmlns="http://www.w3.org/2000/svg" version="1.0" width="237.000000pt" height="213.000000pt" viewBox="0 0 237.000000 213.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,213.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                        <path d="M703 1868 c-13 -6 -23 -18 -23 -27 0 -9 -31 -86 -69 -171 -99 -222 -124 -301 -125 -385 -1 -79 15 -116 83 -203 32 -41 41 -60 41 -91 0 -32 8 -49 41 -87 22 -26 45 -58 50 -71 5 -13 9 -100 9 -192 l0 -168 -46 -33 c-44 -32 -104 -110 -104 -137 0 -21 81 -55 145 -61 72 -5 166 12 196 37 17 13 20 24 16 44 -10 38 -68 108 -104 126 l-33 16 0 115 c0 140 12 220 41 266 l21 35 16 -22 c43 -62 55 -120 61 -294 6 -155 8 -174 30 -210 12 -22 29 -44 37 -48 8 -4 14 -16 14 -26 0 -10 9 -26 20 -36 16 -15 24 -16 45 -7 22 10 23 14 14 41 -11 32 -32 45 -59 36 -13 -4 -22 4 -33 28 -27 56 -37 118 -37 237 0 127 -16 208 -55 278 -24 42 -24 45 -8 75 40 79 40 612 -1 726 -10 26 -16 76 -16 126 0 66 -3 84 -16 89 -25 10 -127 6 -151 -6z m141 -7 c-9 -10 -55 -14 -114 -11 -29 1 -32 3 -15 10 28 12 142 13 129 1z m14 -78 c0 -38 6 -88 12 -113 21 -81 30 -192 31 -400 1 -282 -3 -309 -58 -377 -48 -59 -63 -90 -63 -132 0 -31 -22 -55 -42 -49 -8 3 -13 25 -14 55 -3 60 -14 85 -63 136 l-36 38 2 242 c3 196 7 263 24 354 l21 113 20 -26 c17 -21 19 -34 14 -82 -11 -104 34 -226 78 -209 31 12 50 69 54 169 3 67 9 101 18 109 8 6 14 16 14 22 0 5 -9 2 -20 -8 -17 -15 -20 -31 -20 -94 0 -84 -14 -147 -38 -173 -23 -26 -31 -22 -52 25 -15 31 -20 65 -20 130 0 69 -4 94 -18 115 -16 23 -18 41 -14 120 l4 93 42 -6 c22 -3 57 -1 76 4 19 5 38 9 41 10 3 1 6 -29 7 -66z m-183 -50 c-1 -32 -14 -107 -28 -166 -20 -85 -27 -149 -33 -295 -4 -103 -7 -195 -6 -206 2 -31 -85 91 -103 145 -21 63 -16 114 24 232 25 72 142 347 148 347 1 0 0 -26 -2 -57z m215 -883 c36 -70 50 -148 50 -275 0 -120 16 -210 44 -244 9 -12 8 -13 -3 -7 -33 20 -45 79 -51 253 l-6 172 -36 70 c-20 39 -32 71 -27 71 5 0 18 -18 29 -40z m-122 -285 c-2 -79 -7 -147 -11 -151 -3 -4 -13 -4 -22 -1 -12 5 -15 29 -15 146 0 137 0 140 23 144 12 2 24 5 26 6 2 0 2 -64 -1 -144z m-56 -137 c2 -17 10 -23 28 -23 18 0 26 6 28 23 5 30 25 28 67 -10 33 -28 75 -94 75 -117 0 -15 -80 -42 -145 -48 -66 -6 -164 16 -186 43 -15 18 10 61 65 112 52 48 63 51 68 20z m338 -128 c17 -9 18 -14 8 -35 -6 -14 -15 -25 -19 -25 -13 0 -31 40 -25 56 6 17 11 17 36 4z"/>
+                        <path d="M760 1591 c-11 -21 -14 -120 -4 -145 10 -26 31 -18 43 15 21 59 9 149 -19 149 -5 0 -14 -9 -20 -19z m35 -22 c8 -35 -8 -60 -26 -42 -12 12 -3 73 11 73 5 0 11 -14 15 -31z m-1 -88 c-4 -14 -9 -30 -12 -35 -7 -13 -22 16 -22 46 0 21 4 25 20 21 16 -4 19 -11 14 -32z"/>
+                        <path d="M602 1593 c-81 -200 -106 -284 -98 -334 8 -47 44 -123 76 -159 l22 -25 -16 25 c-39 61 -67 123 -72 163 -7 50 26 158 107 351 28 65 48 120 46 122 -2 3 -31 -62 -65 -143z"/>
+                        <path d="M631 384 c-23 -29 -26 -40 -12 -48 8 -6 51 52 51 68 0 14 -20 4 -39 -20z"/>
+                        <path d="M1525 1181 c-14 -6 -21 -19 -23 -42 -1 -18 -4 -34 -5 -36 -2 -1 -45 -13 -96 -27 -125 -32 -174 -70 -139 -107 7 -8 21 -48 32 -89 10 -41 27 -99 37 -129 10 -30 18 -55 16 -55 -26 -8 -63 -36 -65 -50 -6 -27 35 -63 97 -88 46 -18 77 -22 171 -22 115 -1 171 9 257 45 69 29 79 76 22 100 -22 8 -28 16 -23 28 32 77 63 175 69 213 4 26 13 53 21 59 51 42 -30 102 -166 121 -78 12 -80 13 -80 40 0 17 -7 31 -19 38 -23 12 -77 12 -106 1z m90 -10 c3 -6 -14 -12 -37 -14 -32 -3 -30 -4 10 -2 l52 2 0 -32 c0 -28 29 -86 30 -60 0 6 -5 16 -12 23 -16 16 18 16 104 -2 81 -18 124 -39 131 -64 14 -55 -57 -73 -298 -79 -260 -7 -354 12 -326 65 11 20 55 38 164 66 54 13 58 13 53 -2 -5 -13 -3 -12 9 2 8 11 15 29 15 41 0 37 28 65 65 65 19 0 36 -4 40 -9z m255 -225 c0 -8 -8 -17 -17 -20 -51 -15 -191 -26 -321 -25 -181 1 -236 8 -240 31 -3 15 1 17 30 10 50 -11 458 -6 493 6 42 15 55 14 55 -2z m-23 -93 c-8 -27 -29 -83 -47 -125 -24 -60 -37 -79 -58 -87 -24 -8 -24 -10 -5 -10 12 -1 29 10 40 25 15 20 25 25 41 20 45 -15 12 -63 -58 -86 -22 -7 -37 -17 -34 -21 3 -5 -10 -6 -28 -3 -24 4 -29 3 -19 -4 11 -8 2 -9 -30 -6 -31 3 -38 2 -24 -5 25 -11 -98 -4 -168 10 -27 5 -53 6 -59 3 -7 -5 -8 -2 -3 6 6 10 3 12 -13 8 -14 -4 -20 -2 -15 5 4 7 0 8 -13 3 -10 -4 -15 -4 -12 0 4 3 -5 16 -19 28 -30 26 -26 52 9 65 19 7 25 4 36 -15 18 -34 97 -54 201 -53 47 1 100 5 116 8 17 4 -20 5 -81 3 -152 -6 -205 10 -238 76 -13 26 -31 74 -40 107 -10 33 -19 67 -21 75 -4 13 27 15 233 15 130 1 255 6 277 11 22 6 41 7 43 3 2 -4 -3 -29 -11 -56z"/>
+                        <path d="M1520 1059 c0 -12 57 -18 86 -10 25 7 21 9 -29 12 -31 2 -57 1 -57 -2z"/>
+                        <path d="M1843 994 c-83 -36 -437 -43 -532 -10 -23 7 -38 10 -36 6 15 -25 89 -35 265 -35 188 0 301 14 337 41 23 17 7 16 -34 -2z"/>
+                        </g>
+                      </svg>
+                        <div class="flex flex-col">
+                            <div class="text-gray-800 sm:font-bold sm:text-3xl">Hand</div>
+                            <div class="text-gray-500">Blender</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="hidden sm:block">
+                    <div class="block mx-5 h-[100px] min-h-[1em] w-1 self-stretch bg-neutral-100 dark:bg-black/10"></div>
+                </div>
+            </div>
+            <div class="h-[120px] sm:h-[150px] flex items-center justify-evenly">
+                <a href="/Aggr/gas_stove.html">
+                    <div class="flex items-center justify-between">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="mx-auto my-2 w-[80pt] h-[80pt] sm:w-[100pt] sm:h-[100pt]" version="1.0" width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                        <path d="M295 1616 c-56 -25 -74 -58 -144 -265 -52 -153 -65 -204 -56 -211 19 -16 28 2 94 200 64 193 70 205 111 233 22 15 63 17 407 17 l383 0 0 -250 0 -250 -515 0 -515 0 0 -215 c0 -202 1 -216 20 -235 20 -20 33 -20 1033 -20 961 0 1015 1 1030 18 14 15 16 50 17 232 l2 215 -516 3 -516 2 0 250 0 250 380 0 c409 0 419 -1 452 -52 8 -13 41 -102 73 -198 69 -209 72 -215 90 -200 11 9 1 47 -52 206 -66 199 -89 241 -144 269 -40 21 -1587 22 -1634 1z m1828 -753 c-2 -104 -3 -191 -3 -196 0 -4 -453 -6 -1007 -5 l-1008 3 -3 193 -2 192 1012 0 1013 0 -2 -187z"/>
+                        <path d="M523 979 c-71 -21 -110 -109 -77 -175 26 -52 64 -77 116 -77 76 0 128 52 128 128 0 90 -80 149 -167 124z m85 -44 c2 -2 -23 -32 -57 -67 -50 -50 -64 -60 -71 -48 -22 34 -1 92 41 116 21 12 75 12 87 -1z m43 -57 c2 -45 -3 -63 -24 -85 -25 -26 -75 -38 -97 -24 -12 9 -4 21 45 71 33 33 63 60 67 60 4 0 9 -10 9 -22z"/>
+                        <path d="M1603 971 c-104 -48 -96 -195 12 -236 53 -21 97 -10 141 36 25 26 29 38 29 84 0 60 -25 97 -82 121 -41 18 -49 17 -100 -5z m85 -28 c22 -5 20 -9 -39 -69 -35 -35 -67 -64 -71 -64 -15 0 -8 75 8 98 24 35 59 47 102 35z m60 -81 c2 -17 -2 -40 -8 -51 -16 -31 -66 -53 -101 -46 -16 4 -29 8 -29 9 0 10 117 123 125 121 6 -1 11 -16 13 -33z"/>
+                        <path d="M347 1523 c-15 -14 -6 -33 23 -48 l31 -16 -26 -30 c-46 -56 -46 -121 2 -171 15 -15 25 -29 22 -31 -2 -2 -16 -11 -31 -20 -29 -18 -38 -47 -15 -47 7 0 28 11 47 24 l34 23 46 -21 c64 -29 216 -29 280 0 l46 21 34 -23 c42 -29 60 -30 60 -5 0 11 -12 23 -30 31 -33 14 -38 25 -16 37 19 12 46 68 46 98 0 30 -14 61 -42 92 l-20 21 31 16 c31 16 40 39 21 51 -5 3 -27 -6 -49 -20 -39 -26 -39 -26 -73 -8 -26 14 -56 18 -148 18 -92 0 -122 -4 -148 -18 -34 -18 -34 -18 -73 7 -43 29 -43 29 -52 19z m333 -44 c75 -12 91 -22 60 -39 -16 -8 -30 -9 -52 -1 -17 6 -48 11 -68 11 -20 0 -51 -5 -68 -11 -22 -8 -36 -7 -53 1 -20 11 -21 13 -5 22 10 6 39 13 64 18 26 4 49 8 52 9 3 0 34 -4 70 -10z m-216 -62 c15 -11 16 -17 7 -35 -14 -26 -14 -69 -1 -77 17 -10 11 -29 -12 -44 -20 -13 -24 -11 -50 20 -32 38 -36 74 -11 109 29 42 40 47 67 27z m375 -21 c28 -44 26 -78 -5 -115 -22 -27 -28 -29 -50 -19 -25 12 -32 32 -14 43 13 8 13 51 -1 77 -9 18 -8 24 7 35 28 20 41 16 63 -21z m-179 -6 c-29 -23 -48 -24 -72 -6 -29 21 -21 26 40 26 l57 0 -25 -20z m-110 -25 c37 -19 37 -26 1 -46 -21 -12 -32 -14 -40 -6 -17 17 -13 67 6 67 2 0 17 -7 33 -15z m188 -14 c2 -12 -2 -28 -8 -36 -9 -11 -16 -11 -41 3 -36 21 -36 27 -1 46 34 19 46 16 50 -13z m-84 -50 l28 -19 -31 -7 c-17 -4 -45 -4 -62 0 l-31 7 28 19 c16 10 31 19 34 19 3 0 18 -9 34 -19z m-42 -59 c37 -2 75 1 87 7 15 9 26 8 41 -1 11 -7 20 -16 20 -20 0 -9 -93 -28 -141 -28 -36 0 -128 18 -138 27 -10 8 35 32 49 26 8 -4 45 -9 82 -11z"/>
+                        <path d="M1327 1523 c-14 -13 -6 -29 23 -47 l31 -17 -25 -30 c-45 -54 -43 -124 6 -176 12 -13 20 -24 17 -26 -2 -2 -16 -11 -31 -20 -16 -10 -28 -22 -28 -28 0 -20 30 -20 60 1 l31 22 57 -18 c80 -27 211 -25 272 2 l46 21 34 -23 c42 -29 60 -30 60 -5 0 11 -12 23 -30 31 -28 12 -41 30 -21 30 17 0 51 67 51 99 0 36 -13 65 -42 97 -19 21 -19 21 17 43 31 18 35 24 25 36 -11 13 -18 12 -55 -10 -42 -24 -44 -24 -76 -8 -55 28 -200 30 -274 5 l-60 -21 -37 25 c-42 27 -42 27 -51 17z m333 -44 c75 -12 91 -22 60 -39 -16 -8 -30 -9 -52 -1 -17 6 -48 11 -68 11 -20 0 -51 -5 -68 -11 -22 -8 -36 -7 -53 1 -20 11 -21 13 -5 22 10 6 39 13 64 18 26 4 49 8 52 9 3 0 34 -4 70 -10z m-216 -60 c23 -11 24 -14 11 -33 -19 -26 -19 -56 0 -83 14 -19 13 -22 -11 -38 -29 -19 -45 -11 -70 36 -20 40 -18 63 12 98 30 36 26 34 58 20z m375 -18 c29 -41 27 -84 -6 -121 -27 -29 -29 -30 -51 -15 -17 13 -20 20 -12 35 14 26 13 73 -2 89 -11 10 -9 15 6 27 29 21 42 18 65 -15z m-159 2 c0 -5 -12 -15 -28 -23 -24 -14 -30 -14 -54 0 -41 22 -34 30 27 30 30 0 55 -3 55 -7z m-120 -43 c14 -10 23 -20 20 -22 -40 -30 -59 -37 -70 -23 -15 18 -5 65 13 65 6 0 23 -9 37 -20z m178 3 c6 -11 6 -25 0 -39 -10 -22 -13 -22 -39 -9 -40 21 -43 32 -12 49 36 20 40 19 51 -1z m-85 -59 l32 -17 -25 -9 c-14 -5 -41 -6 -60 -3 l-34 7 24 19 c30 23 25 22 63 3z m-27 -64 c31 0 64 5 74 10 19 10 60 -5 60 -22 0 -9 -93 -28 -140 -28 -45 0 -140 20 -140 30 0 15 46 27 68 19 13 -5 48 -9 78 -9z"/>
+                        </g>
+                      </svg>
+                          <div class="flex flex-col">
+                            <div class="text-gray-800 sm:font-bold sm:text-3xl">Gas</div>
+                            <div class="text-gray-500">Stove</div>
+                        </div>
+                    </div>
+                </a>
+                <div class="hidden sm:block">
+                    <div class="block mx-5 h-[100px] min-h-[1em] w-1 self-stretch bg-neutral-100 dark:bg-black/10"></div>
+                </div>
+            </div>
+            <div class="h-[120px] sm:h-[150px] flex items-center justify-evenly">
+                <a href="/Aggr/electic_kettle.html">
+                    <div class="flex items-center justify-evenly">
+                      <svg class="mx-auto my-2 w-[80pt] h-[80pt] sm:w-[100pt] sm:h-[100pt]" xmlns="http://www.w3.org/2000/svg" version="1.0" width="225.000000pt" height="225.000000pt" viewBox="0 0 225.000000 225.000000" preserveAspectRatio="xMidYMid meet">
+                        <metadata>
+                        Created by potrace 1.10, written by Peter Selinger 2001-2011
+                        </metadata>
+                        <g transform="translate(0.000000,225.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+                        <path d="M1088 1963 c-30 -3 -52 -18 -111 -73 l-74 -69 -124 1 c-185 1 -173 3 -142 -29 36 -39 90 -155 98 -211 5 -38 0 -64 -25 -136 -76 -217 -127 -517 -117 -679 5 -82 4 -90 -19 -124 -65 -96 -53 -157 36 -186 105 -34 338 -68 510 -74 258 -9 513 29 553 81 11 15 1 103 -17 154 l-15 42 65 0 c83 0 124 19 124 58 0 44 -16 52 -101 52 l-77 0 -4 53 c-3 44 0 55 18 69 26 21 114 199 142 288 69 215 50 387 -52 476 -22 19 -52 46 -66 59 -42 39 -131 95 -151 95 -11 0 -27 -9 -36 -20 -10 -11 -23 -20 -30 -20 -7 0 -31 36 -53 81 -33 64 -48 83 -73 93 -33 14 -194 25 -259 19z m192 -33 c14 -4 -24 -5 -85 -2 -60 2 -112 6 -114 8 -8 7 174 2 199 -6z m-220 -14 c0 -5 -75 -56 -84 -56 -14 0 6 21 38 41 29 18 46 23 46 15z m305 -7 c11 -17 -1 -21 -15 -4 -8 9 -8 15 -2 15 6 0 14 -5 17 -11z m-80 -80 c72 -7 131 -13 133 -14 1 -1 18 -49 38 -106 84 -247 185 -762 149 -764 -5 -1 -32 -6 -60 -12 -77 -18 -215 -42 -265 -47 -25 -2 0 -2 55 0 55 1 133 10 173 18 41 9 78 14 83 10 10 -6 12 -158 3 -228 l-7 -46 -81 -26 c-143 -45 -479 -50 -675 -9 -85 18 -194 60 -212 81 -15 19 -2 257 15 251 6 -3 10 -10 8 -16 -20 -92 -22 -231 -3 -231 3 0 7 48 8 107 1 59 4 112 7 119 4 10 15 9 51 -1 77 -24 260 -45 368 -44 l102 2 -129 8 c-195 11 -403 50 -413 77 -8 21 15 169 48 302 56 233 134 418 217 521 l45 57 106 1 c58 1 165 -3 236 -10z m-470 -29 c79 0 80 0 55 -18 -14 -9 -42 -34 -63 -55 -20 -21 -37 -34 -37 -29 0 5 -7 9 -15 9 -18 0 -18 -1 -1 -57 8 -25 15 -36 15 -25 1 12 8 30 16 40 48 63 51 63 17 -2 -20 -40 -39 -73 -42 -73 -3 0 -7 12 -8 26 -3 34 -37 110 -67 150 -33 43 -32 48 13 40 20 -3 73 -6 117 -6z m772 -36 c17 -15 21 -24 11 -20 -9 2 -33 8 -52 12 -35 6 -43 14 -29 27 13 14 43 6 70 -19z m49 -109 c51 -25 78 -45 93 -69 29 -47 26 -59 -3 -15 -17 24 -51 50 -103 77 -95 51 -87 55 13 7z m-30 -81 c68 -32 86 -54 92 -112 7 -81 -44 -243 -79 -250 -12 -2 -20 21 -38 114 -13 64 -33 154 -46 200 l-22 84 21 -6 c12 -4 44 -17 72 -30z m149 -241 c-20 -69 -81 -193 -95 -193 -6 0 3 24 19 53 36 62 80 192 83 239 1 32 1 32 5 -5 2 -21 -3 -63 -12 -94z m-127 -523 c1 -62 -1 -117 -6 -122 -5 -5 -7 21 -4 64 2 40 0 97 -6 126 -7 38 -6 52 2 49 7 -2 12 -44 14 -117z m150 -56 c12 -4 22 -14 22 -24 0 -16 -10 -19 -70 -22 l-70 -3 0 28 c0 26 2 27 48 27 26 0 57 -3 70 -6z m-1118 -131 c50 -24 161 -46 350 -69 141 -18 297 -14 425 11 96 18 117 19 95 5 -19 -12 -6 -12 44 -1 68 16 24 -8 -54 -29 l-75 -21 65 5 c81 6 55 -7 -70 -35 l-85 -19 71 4 c39 3 97 14 130 25 41 13 53 15 39 5 -41 -31 -125 -47 -365 -74 -78 -8 -73 -9 50 -4 152 5 259 23 319 54 35 17 41 18 41 5 0 -20 -33 -32 -150 -57 -84 -18 -119 -19 -310 -15 -208 6 -370 22 -514 52 -61 13 -103 31 -93 41 2 2 46 -7 98 -20 105 -27 251 -45 234 -29 -5 5 -52 15 -104 22 -101 14 -217 43 -232 58 -5 5 -7 17 -4 25 5 13 11 14 47 1 23 -8 53 -12 67 -11 22 3 19 6 -19 16 -70 20 -93 33 -45 26 30 -4 36 -3 25 5 -8 6 -23 11 -32 11 -20 0 -21 1 -12 25 4 9 9 14 13 12 3 -1 26 -13 51 -24z m980 -93 c0 -5 -5 -10 -11 -10 -5 0 -7 5 -4 10 3 6 8 10 11 10 2 0 4 -4 4 -10z"/>
+                        <path d="M1390 1691 c41 -112 73 -230 105 -381 37 -175 50 -178 20 -4 -21 118 -57 254 -94 351 -42 109 -68 138 -31 34z"/>
+                        <path d="M914 1718 c-4 -7 -3 -8 4 -4 12 7 16 16 8 16 -3 0 -8 -5 -12 -12z"/>
+                        <path d="M872 1648 c-62 -108 -132 -301 -146 -398 -4 -25 17 27 48 116 30 89 72 201 94 248 23 47 39 86 37 86 -2 0 -17 -24 -33 -52z"/>
+                        <path d="M1441 1354 c0 -11 3 -14 6 -6 3 7 2 16 -1 19 -3 4 -6 -2 -5 -13z"/>
+                        <path d="M1456 1285 c4 -27 12 -101 18 -162 7 -62 16 -116 20 -120 13 -12 -3 140 -24 242 -11 50 -17 68 -14 40z"/>
+                        <path d="M699 1114 c-16 -42 -23 -104 -12 -104 10 0 35 121 27 129 -2 2 -9 -9 -15 -25z"/>
+                        <path d="M1530 1090 c0 -7 3 -10 7 -7 3 4 3 10 0 14 -4 3 -7 0 -7 -7z"/>
+                        <path d="M1572 869 c-1 -20 -5 -78 -8 -130 -5 -71 -4 -91 5 -83 8 7 11 48 8 130 -1 65 -4 103 -5 83z"/>
+                        <path d="M670 860 c0 -7 3 -10 7 -7 3 4 3 10 0 14 -4 3 -7 0 -7 -7z"/>
+                        <path d="M661 763 c0 -46 2 -83 7 -83 4 0 6 26 4 57 -5 101 -9 111 -11 26z"/>
+                        <path d="M684 722 c4 -61 10 -81 21 -70 3 2 -2 34 -10 69 l-15 64 4 -63z"/>
+                        <path d="M1538 700 c-12 -38 -10 -66 3 -53 6 6 9 26 7 44 -3 32 -3 33 -10 9z"/>
+                        <path d="M717 1742 c10 -18 19 -28 22 -21 2 8 6 7 13 -2 8 -11 9 -11 6 -1 -2 8 -7 13 -11 12 -5 0 -17 9 -28 22 l-20 23 18 -33z"/>
+                        <path d="M770 1720 c0 -7 3 -10 7 -7 3 4 3 10 0 14 -4 3 -7 0 -7 -7z"/>
+                        <path d="M1698 723 c18 -2 45 -2 60 0 15 2 0 4 -33 4 -33 0 -45 -2 -27 -4z"/>
+                        <path d="M585 549 c9 -13 98 -39 134 -38 44 1 34 5 -63 28 -41 10 -73 15 -71 10z"/>
+                        </g>
+                        </svg>
+                            <div class="flex flex-col">
+                                <div class="text-gray-800 sm:font-bold sm:text-3xl">Electric</div>
+                                <div class="text-gray-500">Kettle</div>
+                            </div>
+                    </div>
+                </a>
+                <div class="hidden sm:block">
+                    <div class="block mx-5 h-[100px] min-h-[1em] w-1 self-stretch bg-neutral-100 dark:bg-black/10"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="relative bg-cover bg-center bg-[url(/Aggr/resources/images/cooking_appliances/banner/mixer_grinder.png)] h-[200px] sm:h-[400px] bg-no-repeat">
+        <div class="absolute flex flex-col gap-2 sm:gap-4 left-[15px] sm:left-[20px] top-0 bottom-0 my-auto h-[100px] sm:h-[200px] w-[30%]">
+            <h1 class="sm:font-bold text-[14px] sm:text-3xl sm:font-medium text-gray-800">Mixer Grinder</h1>
+            <p class="hidden md:block">From quick chutneys to smooth batters, the Usha mixer grinder effortlessly tackles all your grinding needs. Its robust motor and versatile blades ensure perfect textures every time, making your kitchen tasks a breeze, be it on your countertop or tucked away in a compact corner.</p>
+            <div class="border w-[60%] sm:w-[40%] text-[12px] text-center rounded-full border-gray-800 bg-gray-800 p-2 text-center text-white">Explore</div>
+        </div>
+    </div>
+    <div class="relative bg-cover bg-center bg-[url(/Aggr/resources/images/cooking_appliances/banner/hand_blender.jpeg)] h-[200px] sm:h-[400px] bg-no-repeat">
+        <div class="absolute flex flex-col gap-2 sm:gap-4 right-[15px] sm:right-[20px] top-0 bottom-0 my-auto h-[100px] sm:h-[200px] w-[30%]">
+            <h1 class="sm:font-bold text-[14px] sm:text-3xl sm:font-medium text-gray-800">Hand Blender</h1>
+            <p class="hidden md:block">Whip up smoothies, blend soups, or whisk batters in a jiffy with the Usha hand blender. Its ergonomic design and powerful motor offer comfort and control, allowing you to create culinary delights with ease, be it in your hand or within your favorite mixing bowl.</p>
+            <div class="border w-[60%] sm:w-[40%] text-[12px] text-center rounded-full border-gray-800 bg-gray-800 p-2 text-center text-white">Explore</div>
+        </div>
+    </div>
+    <div class="relative bg-cover bg-center bg-[url(/Aggr/resources/images/cooking_appliances/banner/gas_stove.jpeg)] h-[200px] sm:h-[400px] bg-no-repeat">
+        <div class="absolute flex flex-col gap-2 sm:gap-4 left-[15px] sm:left-[20px] top-0 bottom-0 my-auto h-[100px] sm:h-[200px] w-[30%]">
+            <h1 class="sm:font-bold text-[14px] sm:text-3xl sm:font-medium text-gray-800">Gas Stove</h1>
+            <p class="hidden md:block">Cook up a storm with the Usha gas stove, designed for efficient and even cooking. Its sturdy build and optimally spaced burners provide the flexibility to prepare multiple dishes simultaneously, whether you're simmering a delicate sauce or searing a steak, right at your kitchen's heart.</p>
+            <div class="border w-[60%] sm:w-[40%] text-[12px] text-center rounded-full border-gray-800 bg-gray-800 p-2 text-center text-white">Explore</div>
+        </div>
+    </div>
+    <div class="relative bg-cover bg-center bg-[url(/Aggr/resources/images/cooking_appliances/banner/electic_kettle.jpeg)] h-[200px] sm:h-[400px] bg-no-repeat">
+        <div class="absolute flex flex-col gap-2 sm:gap-4 right-[15px] sm:right-[20px] top-0 bottom-0 my-auto h-[100px] sm:h-[200px] w-[30%]">
+            <h1 class="sm:font-bold text-[14px] sm:text-3xl sm:font-medium text-gray-800">Electic Kettle</h1>
+            <p class="hidden md:block">Heat water for your tea, coffee, or instant noodles in minutes with the Usha electric kettle. Its sleek design and rapid boiling function make it a convenient addition to your kitchen or office pantry, whether you need a quick morning boost or a relaxing evening beverage.</p>
+            <div class="border w-[60%] ml-2 sm:w-[40%] text-[12px] text-center rounded-full border-gray-800 bg-gray-800 p-2 text-center text-white">Explore</div>
+        </div>
+    </div>
+    <footer>
+        <div class="bg-gray-800 text-white pt-4 pb-16">
+          <div class="mx-auto pt-10 sm:pt-16 max-w-7xl px-2 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+              <div class="hidden sm:ml-6 sm:block">
+                <h3 class="font-bold text-2xl">Our Categories</h3>
+                <ul class="mt-4 space-y-2">
+                  <li>Fans</li>
+                  <li>Cooking Appliances</li>
+                  <li>Iron</li>
+                  <li>Cooler</li>
+                  <li>Water Heater</li>
+                  <li>Room Heater</li>
+                </ul>
+              </div>
+              
+              <div class="sm:ml-6 sm:block">
+                <h3 class="font-bold text-xl sm:text-2xl">Connect Us On</h3>
+                <ul class="mt-4 space-y-2 flex gap-2 sm:gap-4">
+                  <li><a href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/Aggr/resources/logos/facebook.png" alt="facebook"></a></li>
+                  <li><a href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/Aggr/resources/logos/twitter.png" alt="twitter"></a></li>
+                  <li><a href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/Aggr/resources/logos/instagram.png" alt="instagram"></a></li>
+                  <li><a href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/Aggr/resources/logos/youtube.png" alt="youtube"></a></li>
+                </ul>
+              </div>
+              
+              <div class="hidden sm:ml-6 sm:block">
+                <h3 class="font-bold text-2xl">Aggrohiya</h3>
+                <ul class="mt-4 space-y-2">
+                  <li>About Us</li>
+                  <li>Contact Us</li>
+                </ul>
+              </div>
+              
+              <div class="sm:ml-8 sm:block">
+                <h3 class="font-bold text-xl sm:text-2xl">Customer Care</h3>
+                <ul class="mt-4 space-y-2">
+                  <li class="text-[14px] sm:text-[16px]">For any issues related to any products give us a call or connect with us here</li>
+                  <li class="flex items-center gap-2 text-[14px] sm:text-[16px]">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="19.591" height="20.591" viewBox="0 0 9.591 9.591">
+                        <defs>
+                          <style>
+                            .cls-1 {
+                              fill: #fff;
+                            }
+                          </style>
+                        </defs>
+                        <path id="noun-call-5183933_-_Outline" data-name="noun-call-5183933 - Outline" class="cls-1" d="M92.958,26.195h0a4.014,4.014,0,0,1-2.839-1.177L87.6,22.5a4.023,4.023,0,0,1-.316-5.33,1.509,1.509,0,0,1,1.183-.57h.011a1.506,1.506,0,0,1,1.184.583l.876,1.15a1.294,1.294,0,0,1-.113,1.693l-.026.026-.03.021a.488.488,0,0,0-.2.332.232.232,0,0,0,.068.148l1.829,1.829a.238.238,0,0,0,.168.068.241.241,0,0,0,.171-.071l.188-.188a1.295,1.295,0,0,1,1.692-.115l1.148.874a1.515,1.515,0,0,1,.021,2.378,4.032,4.032,0,0,1-2.417.863h-.072Zm-4.5-8.5a.406.406,0,0,0-.321.156,2.93,2.93,0,0,0,.23,3.882l2.515,2.515a2.931,2.931,0,0,0,3.882.23.421.421,0,0,0-.008-.656l-1.142-.87a.2.2,0,0,0-.247.006,1.517,1.517,0,0,1-1.172.589,1.269,1.269,0,0,1-.914-.389L89.534,21.4l-.009.008a1.609,1.609,0,0,1-.453-1.026,1.327,1.327,0,0,1,.389-.939l.189-.189A.2.2,0,0,0,89.666,19l-.872-1.145a.414.414,0,0,0-.326-.161Z" transform="translate(-86.422 -16.604)"/>
+                      </svg>
+                    </span>
+                    8595108742
+                  </li>
+                  <li class="flex items-center gap-2 text-[14px] sm:text-[16px]">
+                    <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="22.262" height="22.687" viewBox="0 0 22.262 22.687">
+                        <g id="Group_44420" data-name="Group 44420" transform="translate(-862 -7690)">
+                          <path id="noun-call-5183933" d="M92.958,25.795A3.614,3.614,0,0,1,90.4,24.735L87.881,22.22a3.623,3.623,0,0,1-.284-4.8,1.114,1.114,0,0,1,1.748.012l.873,1.146h0a.894.894,0,0,1-.079,1.169.888.888,0,0,0-.377.641.631.631,0,0,0,.186.451l1.828,1.828h0a.641.641,0,0,0,.9,0l.188-.188a.895.895,0,0,1,1.168-.079l1.146.873h0a1.115,1.115,0,0,1,.013,1.748,3.612,3.612,0,0,1-2.239.775Zm-4.492-8.5a.808.808,0,0,0-.639.309,3.33,3.33,0,0,0,.261,4.412L90.6,24.528a3.331,3.331,0,0,0,4.412.261.821.821,0,0,0-.01-1.286l-1.146-.873a.6.6,0,0,0-.785.053.991.991,0,0,1-1.506.191l-1.828-1.828.068.085a1.22,1.22,0,0,1-.338-.744.935.935,0,0,1,.273-.658l.188-.188a.6.6,0,0,0,.052-.785l-.873-1.146a.812.812,0,0,0-.647-.318Z" transform="translate(781.818 7680.417)" fill="#1e4b81"/>
+                          <path id="noun-call-5183933_-_Outline" data-name="noun-call-5183933 - Outline" d="M92.958,26.195h0a4.014,4.014,0,0,1-2.839-1.177L87.6,22.5a4.023,4.023,0,0,1-.316-5.33,1.509,1.509,0,0,1,1.183-.57h.011a1.506,1.506,0,0,1,1.184.583l.876,1.15a1.294,1.294,0,0,1-.113,1.693l-.026.026-.03.021a.488.488,0,0,0-.2.332.232.232,0,0,0,.068.148l1.829,1.829a.238.238,0,0,0,.168.068.241.241,0,0,0,.171-.071l.188-.188a1.295,1.295,0,0,1,1.692-.115l1.148.874a1.515,1.515,0,0,1,.021,2.378,4.032,4.032,0,0,1-2.417.863h-.072Zm-4.5-8.5a.406.406,0,0,0-.321.156,2.93,2.93,0,0,0,.23,3.882l2.515,2.515a2.931,2.931,0,0,0,3.882.23.421.421,0,0,0-.008-.656l-1.142-.87a.2.2,0,0,0-.247.006,1.517,1.517,0,0,1-1.172.589,1.269,1.269,0,0,1-.914-.389L89.534,21.4l-.009.008a1.609,1.609,0,0,1-.453-1.026,1.327,1.327,0,0,1,.389-.939l.189-.189A.2.2,0,0,0,89.666,19l-.872-1.145a.414.414,0,0,0-.326-.161Z" transform="translate(781.818 7680.417)" fill="#fff"/>
+                          <g id="noun-whatsapp-4795784" transform="translate(862 7690)">
+                            <path id="Path_70250" data-name="Path 70250" d="M142.729,58.566a11.155,11.155,0,1,0-20.13,8.918c-.212,1.529-.382,3.058-.595,4.587-.085.552.595.934,1.062.807,1.486-.425,3.015-.807,4.5-1.232a11.163,11.163,0,0,0,15.161-13.08Zm-2.973,8.2a9.513,9.513,0,0,1-11.678,3.27h-.042a1.021,1.021,0,0,0-.637-.085c-1.189.34-2.378.637-3.567.977.127-1.019.255-2,.382-3.015a1.814,1.814,0,0,0-.042-1.062c-.127-.212-.3-.425-.425-.679a11.213,11.213,0,0,1-.764-1.614,9.494,9.494,0,1,1,16.775,2.209Z" transform="translate(-120.819 -50.216)" fill="#fff"/>
+                          </g>
+                        </g>
+                      </svg>
+                    </span>
+                    8595108742
+                  </li>
+                  <li class="font-bold text-xl">Address</li>
+                  <li class="text-[14px] sm:text-[16px] flex whitespace-nowrap flex-wrap items-center">
+                    <span class="flex gap-2">
+                      <p>Ragister office at ,AGGROHIYA</p>
+                      <img src="/Aggr/resources/AGGROHIYA LOGO.jpg" class="w-[40px] h-[20px] inline" alt="">
+                    </span>
+                    Building No-S-3/166, Mundka Ext.Delhi -110041
+                    <span>Ph- 9811382796, 011-42137772, 011-45668568</span>
+                    <span>Aggrohiya's Support Number- 18005712425</span>
+                 </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </footer>
+      <script>
+
+        document.addEventListener('DOMContentLoaded', function() {
+          // Get necessary elements
+          const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
+          const mobileMenu = document.getElementById('mobile-menu');
+          const openIcon = mobileMenuButton.querySelector('.block');
+          const closeIcon = mobileMenuButton.querySelector('.hidden');
+          
+          // Add ID to the button for easier reference if needed
+          mobileMenuButton.id = 'mobile-menu-button';
+          
+          // Update mobile menu styles to position it as an overlay
+          mobileMenu.classList.add(
+            'absolute',        // Position absolutely
+            'w-full',          // Full width
+            'left-0',          // Align to left
+            'z-40',            // Lower than navbar but above content
+            'bg-gray-800',     // Background color
+            'shadow-lg',       // Add shadow for depth
+            'transition-all',  // Enable transitions
+            'duration-300',    // Animation duration
+            'ease-in-out',     // Animation timing function
+            'transform',       // Enable transforms
+            'opacity-0',       // Start hidden (opacity)
+            'scale-y-0',       // Start hidden (scale)
+            'origin-top'       // Scale from top
+          );
+          
+          // Function to toggle menu visibility
+          function toggleMenu() {
+            if (mobileMenu.classList.contains('hidden')) {
+              // Show menu with animation
+              mobileMenu.classList.remove('hidden');
+              
+              // Use setTimeout to ensure the transition happens after display is set
+              setTimeout(() => {
+                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
+                mobileMenu.classList.add('scale-y-100', 'opacity-100');
+              }, 10);
+              
+              // Toggle icons
+              openIcon.classList.add('hidden');
+              closeIcon.classList.remove('hidden');
+              
+              // Update aria-expanded attribute
+              mobileMenuButton.setAttribute('aria-expanded', 'true');
+            } else {
+              // Hide menu with animation
+              mobileMenu.classList.add('scale-y-0', 'opacity-0');
+              mobileMenu.classList.remove('scale-y-100', 'opacity-100');
+              
+              // Complete hiding after animation finishes
+              setTimeout(() => {
+                mobileMenu.classList.add('hidden');
+              }, 300); // Match with transition duration
+              
+              // Toggle icons
+              openIcon.classList.remove('hidden');
+              closeIcon.classList.add('hidden');
+              
+              // Update aria-expanded attribute
+              mobileMenuButton.setAttribute('aria-expanded', 'false');
+            }
+          }
+          
+          // Event listeners
+          mobileMenuButton.addEventListener('click', toggleMenu);
+          
+          // Close menu when clicking outside
+          document.addEventListener('click', function(event) {
+            if (!mobileMenu.classList.contains('hidden') && 
+                !mobileMenu.contains(event.target) && 
+                !mobileMenuButton.contains(event.target)) {
+              toggleMenu();
+            }
+          });
+          
+          // Close menu when pressing Escape key
+          document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
+              toggleMenu();
+            }
+          });
+        });
+        </script>
+</div>
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+
+</body>
+</html>
