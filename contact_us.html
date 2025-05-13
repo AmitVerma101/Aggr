@@ -4,78 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- Axios Library -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <title>Contact Us</title>
 </head>
 <body>
-  <nav class="sticky top-0 z-50 bg-gray-800 flex-shrink-0">
-    <div class="sm:mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-      <div class="relative flex h-25 items-center justify-between">
-        <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
-          <!-- Mobile menu button-->
-          <button type="button" class="relative  cursor-pointer inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-white focus:outline-hidden focus:ring-inset" aria-controls="mobile-menu" aria-expanded="false">
-            <span class="absolute -inset-0.5"></span>
-            <span class="sr-only">Open main menu</span>
-            <!--
-              Icon when menu is closed.
-  
-              Menu open: "hidden", Menu closed: "block"
-            -->
-            <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-            <!--
-              Icon when menu is open.
-  
-              Menu open: "block", Menu closed: "hidden"
-            -->
-            <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-            </svg>
-          </button>
-        </div>
-        <div class="flex sm:flex-row w-[90%] items-center justify-between sm:justify-between h-20 text-white">
-          <div class="flex items-center justify-center">
-            <img src="/resources/AGGROHIYA LOGO.jpg" alt="company logo" class="h-12 w-30 sm:h-20 sm:w-50">
-          </div>
-          <div class="flex flex-col sm:flex-row items-center">
-            
-            <div class="hidden lg:flex items-center space-x-2">
-              <div class="hidden lg:inline-block mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10 sm:flex-col md:flex-row"></div>
-              <div class="text-white">Aggrohiya's Support:</div>
-              <div class="text-white">1800 - 571 - 2425</div>
-              
-            </div>
-           <div class="flex items-center space-x-2">
-            <div class="hidden sm:inline-block sm:mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10"></div>
-              <img src="/resources/whatsapp.png" class="w-7 h-7 sm:w-10 sm:h-10" alt="">
-              <div>8595108742</div>
-              <div class="hidden sm:inline-block sm:mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-100 dark:bg-white/10"></div>
-           </div> 
-          </div>
-        
-          <div class="hidden sm:ml-6 sm:block">
-            <div class="flex items-center h-20 space-x-6">
-              <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-              <a href="/" class="rounded-md hover:bg-gray-900 px-3 py-2 text-sm font-medium text-white" aria-current="page">Home</a>
-              <a href="#" class="rounded-md hover:bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
-              <a href="/contact_us.html" class="rounded-md hover:bg-gray-900 px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
-            </div>
-          </div>
-        </div>
-        
-      </div>
-    </div>
-  
-    <!-- Mobile menu, show/hide based on menu state. -->
-    <div class="hidden" id="mobile-menu">
-      <div class="space-y-1 px-2 pt-2 pb-3">
-        <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-        <a href="/" class="block rounded-md hover:bg-gray-900 px-3 py-2 text-base font-medium text-white" aria-current="page">Home</a>
-        <a href="#" class="block rounded-md hover:bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Products</a>
-        <a href="/contact_us.html" class="block rounded-md hover:bg-gray-900 px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">Contact Us</a>
-      </div>
-    </div>
-  </nav>
+  <nav id="navbar" class="sticky top-0 z-50 bg-gray-800 flex-shrink-0"></nav>
     <div class="grid bg-gray-200 h-full grid-cols-1 sm:grid-cols-2 gap-4">
 
         <div class="sm:w-[60%] mx-auto text-[14px] ">
@@ -283,91 +219,6 @@
           });
         })();
       </script>
-      <script>
-
-        document.addEventListener('DOMContentLoaded', function() {
-          // Get necessary elements
-          const mobileMenuButton = document.querySelector('button[aria-controls="mobile-menu"]');
-          const mobileMenu = document.getElementById('mobile-menu');
-          const openIcon = mobileMenuButton.querySelector('.block');
-          const closeIcon = mobileMenuButton.querySelector('.hidden');
-          
-          // Add ID to the button for easier reference if needed
-          mobileMenuButton.id = 'mobile-menu-button';
-          
-          // Update mobile menu styles to position it as an overlay
-          mobileMenu.classList.add(
-            'absolute',        // Position absolutely
-            'w-full',          // Full width
-            'left-0',          // Align to left
-            'z-40',            // Lower than navbar but above content
-            'bg-gray-800',     // Background color
-            'shadow-lg',       // Add shadow for depth
-            'transition-all',  // Enable transitions
-            'duration-300',    // Animation duration
-            'ease-in-out',     // Animation timing function
-            'transform',       // Enable transforms
-            'opacity-0',       // Start hidden (opacity)
-            'scale-y-0',       // Start hidden (scale)
-            'origin-top'       // Scale from top
-          );
-          
-          // Function to toggle menu visibility
-          function toggleMenu() {
-            if (mobileMenu.classList.contains('hidden')) {
-              // Show menu with animation
-              mobileMenu.classList.remove('hidden');
-              
-              // Use setTimeout to ensure the transition happens after display is set
-              setTimeout(() => {
-                mobileMenu.classList.remove('scale-y-0', 'opacity-0');
-                mobileMenu.classList.add('scale-y-100', 'opacity-100');
-              }, 10);
-              
-              // Toggle icons
-              openIcon.classList.add('hidden');
-              closeIcon.classList.remove('hidden');
-              
-              // Update aria-expanded attribute
-              mobileMenuButton.setAttribute('aria-expanded', 'true');
-            } else {
-              // Hide menu with animation
-              mobileMenu.classList.add('scale-y-0', 'opacity-0');
-              mobileMenu.classList.remove('scale-y-100', 'opacity-100');
-              
-              // Complete hiding after animation finishes
-              setTimeout(() => {
-                mobileMenu.classList.add('hidden');
-              }, 300); // Match with transition duration
-              
-              // Toggle icons
-              openIcon.classList.remove('hidden');
-              closeIcon.classList.add('hidden');
-              
-              // Update aria-expanded attribute
-              mobileMenuButton.setAttribute('aria-expanded', 'false');
-            }
-          }
-          
-          // Event listeners
-          mobileMenuButton.addEventListener('click', toggleMenu);
-          
-          // Close menu when clicking outside
-          document.addEventListener('click', function(event) {
-            if (!mobileMenu.classList.contains('hidden') && 
-                !mobileMenu.contains(event.target) && 
-                !mobileMenuButton.contains(event.target)) {
-              toggleMenu();
-            }
-          });
-          
-          // Close menu when pressing Escape key
-          document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape' && !mobileMenu.classList.contains('hidden')) {
-              toggleMenu();
-            }
-          });
-        });
-        </script>
+        <script src="/JS/load_header_footer.js"></script>
 </body>
 </html>
