@@ -1,98 +1,135 @@
+<!-- ✅ Styles (Add this inside your <head>) -->
+<style>
+  .bg-light-gray {
+    background-color: #DADADA;
+  }
 
-    <style>
-        .bg-light-gray {
-            background-color: #DADADA;
-        }
-    </style>
+  /* Dropdown show on hover */
+  .group:hover .group-hover\:block {
+    display: block;
+  }
 
-    <nav class="bg-light-gray shadow-sm">
-        <div class="sm:mx-auto px-2 ">
-            <div class="relative flex h-18 items-center justify-between">
-                <div class="absolute inset-y-0 right-0 flex items-center sm:hidden">
-                    <button type="button"
-                        class="relative cursor-pointer inline-flex items-center justify-center rounded-md p-2 text-gray-600 hover:bg-gray-100 hover:text-gray-800 focus:ring-2 focus:ring-neutral-500 focus:outline-hidden focus:ring-inset"
-                        aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
-                        <svg class="block size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <svg class="hidden size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
-                            aria-hidden="true" data-slot="icon">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
-                        </svg>
-                    </button>
-                </div>
-                <div class="flex sm:flex-row w-[80%] sm:w-[90%] mx-auto items-center justify-between sm:justify-between h-20 text-gray-800">
-                    <div class="flex items-center justify-center">
-                        <a href="/"><img src="/resources/AGGROHIYA LOGO_new-Picsart-BackgroundRemover.png" alt="company logo" class="h-17 w-45 sm:h-18 sm:w-50"></a>   
-                    </div>
-                    <div class="flex flex-col sm:flex-row items-center">
-                        <div class="flex items-center justify-center sm:ml-6 sm:block ml-3">
-                            <div class="hidden sm:flex items-center justify-center gap-2 sm:gap-4">
-                                <a class="flex justify-center items-center" href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/resources/logos/facebook.png" alt="facebook"></a>
-                                <a class="flex justify-center items-center" href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/resources/logos/twitter.png" alt="twitter"></a>
-                                <a class="flex justify-center items-center" href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/resources/logos/instagram.png" alt="instagram"></a>
-                                <a class="flex justify-center items-center" href="#"><img class="w-[30px] h-[30px] sm:w-[40px] sm:h-[40px]" src="/resources/logos/youtube.png" alt="youtube"></a>
-                            </div>
-                        </div>
-                        <div class="hidden lg:flex items-center space-x-2">
-                            <div
-                                class="hidden lg:inline-block mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-500 dark:bg-gray-500 sm:flex-col md:flex-row">
-                            </div>
-                            <div class="text-gray-700 font-bold font-large">Aggrohiya Support:</div>
-                            <div class="text-gray-800 font-medium">1800 - 571 - 2425</div>
+  .dropdown {
+    display: none;
+  }
+</style>
 
-                        </div>
-                        <div class="flex items-center space-x-2">
-                            <div
-                                class="hidden sm:inline-block sm:mx-5 h-[40px] min-h-[1em] w-0.5 self-stretch bg-neutral-300 dark:bg-gray-500">
-                            </div>
-                            <img src="/resources/whatsapp.png" class="w-7 h-7 sm:w-10 sm:h-10" alt="">
-                            <div>
-                                <a href="https://wa.me/+9811382796" class="text-gray-800 hover:text-red-600">9811382796</a>
-                            </div>
-                            
-                        </div>
-                    </div>
+<!-- ✅ Top Navigation Bar -->
+<nav class="bg-light-gray shadow-sm">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-1">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <a href="index.html">
+        <img src="resources/AGGROHIYA LOGO_new-Picsart-BackgroundRemover.png" alt="Aggrohiya Logo" class="h-11 sm:h-14">
+      </a>
 
-                    <!-- <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex items-center h-20 space-x-6">
-                            <a href="/" class="rounded-md hover:bg-gray-200 px-3 py-2 text-sm font-medium text-gray-800"
-                                aria-current="page">Home</a>
-                            <a href="#"
-                                class="rounded-md hover:bg-gray-200 px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-800">Products</a>
-                            <a href="/contact_us.html"
-                                class="rounded-md hover:bg-gray-200 px-3 py-2 text-sm font-medium text-gray-600 hover:text-gray-800">Contact Us</a>
-                        </div>
-                    </div> -->
-                </div>
-
-            </div>
-            <!-- Mobile menu, show/hide based on menu state. -->
-            <div class="hidden" id="mobile-menu">
-                <div class="space-y-1 px-2 pt-2 pb-3">
-                    <a href="/" class="block rounded-md hover:bg-gray-200 px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-800"
-                        aria-current="page">Home</a>
-                    <a href="#"
-                        class="block rounded-md hover:bg-gray-200 px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-800">Products</a>
-                    <a href="/contact_us.html"
-                        class="block rounded-md hover:bg-gray-200 px-3 py-2 text-base font-medium text-gray-600 hover:text-gray-800">Contact Us</a>
-                </div>
-            </div>
+      <!-- Social & Contact Info (Desktop) -->
+      <div class="hidden lg:flex items-center space-x-4 text-gray-700 text-sm">
+        <div class="flex space-x-2">
+          <a href="#"><img src="resources/logos/facebook.png" class="w-5 h-5" alt="Facebook"></a>
+          <a href="#"><img src="resources/logos/twitter.png" class="w-5 h-5" alt="Twitter"></a>
+          <a href="#"><img src="resources/logos/instagram.png" class="w-5 h-5" alt="Instagram"></a>
+          <a href="#"><img src="resources/logos/youtube.png" class="w-5 h-5" alt="YouTube"></a>
         </div>
-    </nav>
-    <div class="flex flex-row-reverse pr-20 items-center">
-         <div class="hidden sm:ml-6 sm:block">
-            <div class="flex items-center h-20 space-x-6">
-                <a href="/" class="rounded-md hover:bg-gray-900 text-center py-2 px-3 text-sm font-medium text-white"
-                    aria-current="page"><img src="/resources/home-icon-Picsart-BackgroundRemover.png" alt=""></a>
-                <a href="#"
-                    class="rounded-md hover:bg-gray-900 px-3 py-2 text-center text-sm font-medium text-white">Products</a>
-                <a href="/contact_us.html"
-                    class="rounded-md hover:bg-gray-900 px-3 py-2 text-center text-sm font-medium text-white">Contact Us</a>
-            </div>
-        </div>
+        <div class="border-l h-6 mx-2"></div>
+        <span class="font-semibold">Aggrohiya Support:</span>
+        <span class="text-gray-800 font-medium">1800 - 571 - 2425</span>
+        <div class="border-l h-6 mx-2"></div>
+        <img src="resources/whatsapp.png" class="w-5 h-5" alt="WhatsApp">
+        <a href="https://wa.me/+9811382796" class="hover:text-red-600">9811382796</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="lg:hidden">
+        <button id="mobile-menu-toggle" class="text-gray-700 focus:outline-none">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
+</nav>
+
+<!-- ✅ Main Navigation -->
+<nav class="bg-pink-100 text-black shadow-sm z-50 py-3">
+
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex justify-between items-center h-3">
+      <!-- Desktop Nav -->
+      <div class="hidden lg:flex items-center space-x-10 text-gray-800 font-medium ml-auto">
+        <a href="index.html" class="hover:text-red-600">
+             <img src="resources/home_icon.png" alt="Home" class="h-6 w-6 inline">
+        </a>
+
+       <!-- Products Dropdown using <details> (Click to open) -->
+<details>
+  <summary class="cursor-pointer px-4 py-2 font-medium hover:text-red-600 list-none">
+    Products
+  </summary>
+
+  <!-- Full-width dropdown aligned to viewport -->
+ <div class="absolute left-0 top-[6rem] w-screen bg-light-gray shadow-md h-[7rem] flex items-center px-26 z-50">
+  <!-- 7 bordered boxes -->
+  <div class=" border-gray-400 flex-1 h-20 mx-2 flex flex-col items-center p-1 overflow-visible" >
+    
+    <p class="text-center">Fans</p>
+    
+  </div>
+  <div class=" border-gray-400 flex-1 h-20 mx-2">
+    <p class="text-center">Cooking Appliances</p>
+  </div>
+  <div class=" border-gray-400 flex-1 h-20 mx-2">
+    <p class="text-center">
+        Fabric Care
+    </p>
+  </div>
+  <div class="border-gray-400 flex-1 h-20 mx-2">
+    <p class="text-center">
+        Cooler
+    </p>
+  </div>
+  <div class=" border-gray-400 flex-1 h-20 mx-2">
+    <p class="text-center">Water Heater</p>
+  </div>
+  <div class=" border-gray-400 flex-1 h-20 mx-2">
+    <p class="text-center">Room Heater</p>
+  </div>
+  <div class=" border-gray-400 flex-1 h-20 mx-2">
+    <p class="text-center">Flour Mill</p>
+  </div>
+</div>
+
+</details>
+
+ <a href="contact_us.html" class="hover:text-red-600">Contact Us</a>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+       
+
+  <!-- ✅ Mobile Nav Menu -->
+  <div id="mobile-menu" class="lg:hidden hidden px-4 pb-4">
+    <a href="index.html" class="block py-2 text-gray-700 hover:text-red-600">
+                     <img src="resources/home_icon.png" alt="Home" class="h-6 w-6 inline">
+
+    </a>
+    <a href="#" class="block py-2 text-gray-700 hover:text-red-600">Products</a>
+    <a href="contact_us.html" class="block py-2 text-gray-700 hover:text-red-600">Contact Us</a>
+  </div>
+
+<!-- ✅ Script to Toggle Mobile Menu -->
+<script>
+  const toggleBtn = document.getElementById('mobile-menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  toggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+  });
+</script>
